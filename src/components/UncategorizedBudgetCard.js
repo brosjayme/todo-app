@@ -10,3 +10,4 @@ export default function UncategorizedBudgetCard(props) {
     return  <BudgetCard amount={amount} name="uncategorized" gray {...props}/>
   
 }
+ 
