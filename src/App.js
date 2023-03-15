@@ -1,6 +1,7 @@
 import { Button, Stack } from "react-bootstrap";
 import Container from "react-bootstrap/Container";
 import AddBudgetModal from "./components/AddBudgetModal";
+import Signin from "./components/Signin/Signin";
 import AddExpenseModal from "./components/AddExpenseModal";
 import ViewExpensesModal from "./components/ViewExpensesModal";
 import BudgetCard from './components/BudgetCard'
@@ -24,6 +25,7 @@ function App() {
 
   return (
     <>
+      <Signin />
   <Container className="my-4">
    <Stack direction="horizontal" gap="2" className="mb-4">
    <h1 className="me-auto">Budgets</h1>
@@ -61,6 +63,7 @@ function App() {
     <TotalBudgetCard/>
 </div>
   </Container>
+   
     <AddBudgetModal 
     show={showAddBudgetModal}
     handleClose={() => setShowAddBudgetModal(false) }
