@@ -8,6 +8,7 @@ import UncategorizedBudgetCard from "./components/UncategorizedBudgetCard";
 import TotalBudgetCard from "./components/TotalBudgetCard";
 import { useState } from "react";
 import { UNCATEGORIZED_BUDGET_ID, useBudgets } from "./contexts/BudgetsContext";
+import Quote from './components/Quote'
 import ParticlesBg from 'particles-bg'
 
 function App() {
@@ -82,6 +83,7 @@ function App() {
    handleClose={() => setViewExpensesModalBudgetId() }
     />
       <ParticlesBg type="circle" bg={true} />
+      <Quote />
      </>
 
   )  
